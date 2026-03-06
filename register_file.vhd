@@ -61,7 +61,7 @@ architecture structural of register_file is
     -- INTERNAL SIGNALS
     -- --------------------------------------------------------
     type reg_array is array (0 to 31) of STD_LOGIC_VECTOR(31 downto 0);
-    signal REGS   : reg_array := (others => (others => '0'));
+    signal REGS : reg_array := (others => (others => 'X'));
     signal DEC_OUT : STD_LOGIC_VECTOR(31 downto 0);
     signal REG_WE  : STD_LOGIC_VECTOR(31 downto 0);
 
