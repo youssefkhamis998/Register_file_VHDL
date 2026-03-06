@@ -41,7 +41,8 @@ The register file exposes the following ports:
 
 ## 2. 📤 Read Path — Dual Multiplexer Design
 
-<img width="472" height="390" alt="Read Path Dual Multiplexer Diagram" src="https://github.com/user-attachments/assets/fa071069-6d0e-4a14-8b6e-af247f71ade9" />
+<img width="389" height="344" alt="Write Path Decoder Diagram" src="https://github.com/user-attachments/assets/959c4951-bf8f-4175-881e-223d078ed2df" />
+
 
 Both read ports are **asynchronous**: the register number directly selects one of *n* register outputs via a **multiplexer**.
 
@@ -55,7 +56,7 @@ Both read ports are **asynchronous**: the register number directly selects one o
 
 ## 3. 📥 Write Path — Decoder Design
 
-<img width="389" height="344" alt="Write Path Decoder Diagram" src="https://github.com/user-attachments/assets/959c4951-bf8f-4175-881e-223d078ed2df" />
+<img width="472" height="390" alt="Read Path Dual Multiplexer Diagram" src="https://github.com/user-attachments/assets/fa071069-6d0e-4a14-8b6e-af247f71ade9" />
 
 The write path consists of three stages:
 
