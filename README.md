@@ -16,9 +16,13 @@ Write Path — Decoder-driven write enable logic controlling D flip-flops for ea
     1 write port (clocked, gated by RegWrite)
 2. Read Path — Dual Multiplexer Design
    <img width="472" height="390" alt="Screenshot from 2026-03-06 05-09-27" src="https://github.com/user-attachments/assets/fa071069-6d0e-4a14-8b6e-af247f71ade9" />
+
+
    Both read ports are asynchronous: the register number directly selects one of n register outputs via a multiplexer.
 3. Write Path — Decoder
     <img width="389" height="344" alt="Screenshot from 2026-03-06 05-10-30" src="https://github.com/user-attachments/assets/959c4951-bf8f-4175-881e-223d078ed2df" />
+
+    
    A decoder to select the target register from the register number
    An AND gate combining the decoder output with the Write control signal
    A D flip-flop (with clock C and data D) per register to latch the value on the rising clock edge
